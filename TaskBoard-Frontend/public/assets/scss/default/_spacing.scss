@@ -1,0 +1,395 @@
+/*===============================================
+                 Typography
+=================================================*/
+
+.p_text {
+  font-size: 18px;
+  line-height: 32px;
+  @media #{$sm-layout-device} {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.letterSpace_2 {
+  letter-spacing: 2px;
+}
+
+.plr-120 {
+  @media #{$lg-layout-device} {
+    padding: 0 60px !important;
+  }
+  @media #{$md-layout-device} {
+    padding: 0 60px !important;
+  }
+  @media #{$sm-layout-device} {
+    padding: 0 30px !important;
+  }
+}
+
+.mt-dec-30 {
+  margin-top: -30px;
+}
+.mt-dec-20 {
+  margin-top: -20px;
+}
+.mt-dec-10 {
+  margin-top: -10px;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.pt-250 {
+  padding-top: 250px;
+}
+.pt-260 {
+  padding-top: 260px;
+}
+.pt-270 {
+  padding-top: 270px;
+}
+.pt-280 {
+  padding-top: 280px;
+}
+.pt-290 {
+  padding-top: 290px;
+}
+.pt-300 {
+  padding-top: 300px;
+}
+
+// Looping universal items 5px to 200px
+
+@for $i from 1 through 40 {
+  .plr-#{5 * $i} {
+    padding: 0 5px * $i;
+  }
+  .ptb-#{5 * $i} {
+    padding: 5px * $i 0;
+  }
+  .mtb-#{5 * $i} {
+    padding: 5px * $i 0;
+  }
+  .mlr-#{5 * $i} {
+    padding: 0 5px * $i;
+  }
+  .pl-#{5 * $i} {
+    padding-left: 5px * $i;
+  }
+  .pt-#{5 * $i} {
+    padding-top: 5px * $i;
+  }
+  .pr-#{5 * $i} {
+    padding-right: 5px * $i;
+  }
+  .pb-#{5 * $i} {
+    padding-bottom: 5px * $i;
+  }
+  .ml-#{5 * $i} {
+    margin-left: 5px * $i;
+  }
+  .mt-#{5 * $i} {
+    margin-top: 5px * $i;
+  }
+  .mr-#{5 * $i} {
+    margin-right: 5px * $i;
+  }
+  .mb-#{5 * $i} {
+    margin-bottom: 5px * $i;
+  }
+}
+
+.ptb-130,
+.ptb-120,
+.ptb-100,
+.ptb-80 {
+  @media #{$md-layout-device} {
+    padding: 80px 0 !important;
+  }
+  @media #{$sm-layout-device} {
+    padding: 80px 0 !important;
+  }
+}
+.pt-140,
+.pt-130,
+.pt-120,
+.pt-100,
+.pt-80 {
+  @media #{$md-layout-device} {
+    padding: 80px !important;
+  }
+  @media #{$sm-layout-device} {
+    padding: 60px !important;
+  }
+}
+.pb-140,
+.pb-130,
+.pb-120,
+.pb-100,
+.pb-80 {
+  @media #{$md-layout-device} {
+    padding-bottom: 80px !important;
+  }
+  @media #{$sm-layout-device} {
+    padding-bottom: 60px !important;
+  }
+}
+
+// Use this for lg-layout-device only
+
+@media #{$lg-layout-device} {
+  .plr-lg-0 {
+    padding: 0;
+  }
+  .ptb-lg-0 {
+    padding: 0;
+  }
+  .pl-lg-0 {
+    padding-left: 0;
+  }
+  .pr-lg-0 {
+    padding-right: 0;
+  }
+  .pt-lg-0 {
+    padding-top: 0;
+  }
+  .pb-lg-0 {
+    padding-bottom: 0;
+  }
+  .mtb-lg-0 {
+    margin: 0;
+  }
+  .ml-lg-0 {
+    margin-left: 0;
+  }
+  .mr-lg-0 {
+    margin-right: 0;
+  }
+  .mt-lg-0 {
+    margin-top: 0;
+  }
+  .mb-lg-0 {
+    margin-bottom: 0;
+  }
+
+  // Looping items 5px to 200px
+
+  @for $i from 1 through 40 {
+    .plr-lg-#{5 * $i} {
+      padding: 0 5px * $i;
+    }
+    .ptb-lg-#{5 * $i} {
+      padding: 5px * $i 0;
+    }
+    .mtb-lg-#{5 * $i} {
+      padding: 5px * $i 0;
+    }
+    .mlr-lg-#{5 * $i} { 
+      padding: 0 5px * $i;
+    }
+    .pl-lg-#{5 * $i} {
+      padding-left: 5px * $i;
+    }
+    .pt-lg-#{5 * $i} {
+      padding-top: 5px * $i;
+    }
+    .pr-lg-#{5 * $i} {
+      padding-right: 5px * $i;
+    }
+    .pb-lg-#{5 * $i} {
+      padding-bottom: 5px * $i;
+    }
+    .ml-lg-#{5 * $i} {
+      margin-left: 5px * $i;
+    }
+    .mt-lg-#{5 * $i} {
+      margin-top: 5px * $i !important;
+    }
+    .mr-lg-#{5 * $i} {
+      margin-right: 5px * $i;
+    }
+    .mb-lg-#{5 * $i} {
+      margin-bottom: 5px * $i;
+    }
+  }
+}
+// Use this for md-layout-device only
+
+@media #{$md-layout-device} {
+  .plr-md-0 {
+    padding: 0;
+  }
+  .ptb-md-0 {
+    padding: 0;
+  }
+  .pl-md-0 {
+    padding-left: 0;
+  }
+  .pr-md-0 {
+    padding-right: 0;
+  }
+  .pt-md-0 {
+    padding-top: 0;
+  }
+  .pb-md-0 {
+    padding-bottom: 0;
+  }
+  .mtb-md-0 {
+    margin: 0;
+  }
+  .ml-md-0 {
+    margin-left: 0;
+  }
+  .mr-md-0 {
+    margin-right: 0;
+  }
+  .mt-md-0 {
+    margin-top: 0;
+  }
+  .mb-md-0 {
+    margin-bottom: 0;
+  }
+
+  // Looping items 5px to 200px
+
+  @for $i from 1 through 40 {
+    .plr-md-#{5 * $i} {
+      padding: 0 5px * $i;
+    }
+    .ptb-md-#{5 * $i} {
+      padding: 5px * $i 0;
+    }
+    .mtb-md-#{5 * $i} {
+      padding: 5px * $i 0;
+    }
+    .mlr-md-#{5 * $i} {
+      padding: 0 5px * $i;
+    }
+    .pl-md-#{5 * $i} {
+      padding-left: 5px * $i;
+    }
+    .pt-md-#{5 * $i} {
+      padding-top: 5px * $i;
+    }
+    .pr-md-#{5 * $i} {
+      padding-right: 5px * $i;
+    }
+    .pb-md-#{5 * $i} {
+      padding-bottom: 5px * $i;
+    }
+    .ml-md-#{5 * $i} {
+      margin-left: 5px * $i;
+    }
+    .mt-md-#{5 * $i} {
+      margin-top: 5px * $i;
+    }
+    .mr-md-#{5 * $i} {
+      margin-right: 5px * $i;
+    }
+    .mb-md-#{5 * $i} {
+      margin-bottom: 5px * $i;
+    }
+  }
+}
+
+// Use this for sm-layout-device only
+
+@media #{$sm-layout-device} {
+  .plr-sm-0 {
+    padding: 0;
+  }
+  .ptb-sm-0 {
+    padding: 0;
+  }
+  .pl-sm-0 {
+    padding-left: 0;
+  }
+  .pr-sm-0 {
+    padding-right: 0;
+  }
+  .pt-sm-0 {
+    padding-top: 0;
+  }
+  .pb-sm-0 {
+    padding-bottom: 0;
+  }
+  .mtb-sm-0 {
+    margin: 0;
+  }
+  .ml-sm-0 {
+    margin-left: 0;
+  }
+  .mr-sm-0 {
+    margin-right: 0;
+  }
+  .mt-sm-0 {
+    margin-top: 0;
+  }
+  .mb-sm-0 {
+    margin-bottom: 0;
+  }
+
+  // Looping items 5px to 200px
+
+  @for $i from 1 through 40 {
+    .plr-sm-#{5 * $i} {
+      padding: 0 5px * $i;
+    }
+    .ptb-sm-#{5 * $i} {
+      padding: 5px * $i 0;
+    }
+    .mtb-sm-#{5 * $i} {
+      padding: 5px * $i 0;
+    }
+    .mlr-sm-#{5 * $i} {
+      padding: 0 5px * $i;
+    }
+    .pl-sm-#{5 * $i} {
+      padding-left: 5px * $i;
+    }
+    .pt-sm-#{5 * $i} {
+      padding-top: 5px * $i;
+    }
+    .pr-sm-#{5 * $i} {
+      padding-right: 5px * $i;
+    }
+    .pb-sm-#{5 * $i} {
+      padding-bottom: 5px * $i;
+    }
+    .ml-sm-#{5 * $i} {
+      margin-left: 5px * $i;
+    }
+    .mt-sm-#{5 * $i} {
+      margin-top: 5px * $i;
+    }
+    .mr-sm-#{5 * $i} {
+      margin-right: 5px * $i;
+    }
+    .mb-sm-#{5 * $i} {
+      margin-bottom: 5px * $i;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+/*================================
+        Short Code Run Here
+==================================*/
+
+// Import Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap");
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1160px !important;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.jCenter {
+  justify-content: center;
+}
+.jSpace {
+  justify-content: space-between;
+}
+.aCenter {
+  align-items: center;
+}
+
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+.textUppercase {
+  text-transform: uppercase;
+}
+.textLowercase {
+  text-transform: lowercase;
+}
+.textCapitalize {
+  text-transform: capitalize;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*===========================
+    Background Image 
+=============================*/
+.bg_overlay:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--black-color);
+  opacity: 0.57;
+}
+
+.bgImg {
+  @extend %bgImgPosition;
+}
+
+/*===========================
+    Input Placeholder
+=============================*/
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*=============================
+	Overlay styles 
+==============================*/
+
+[data-overlay],
+[data-black-overlay],
+[data-white-overlay],
+[data-theme-overlay] {
+  position: relative;
+  z-index: 1;
+}
+
+[data-overlay] > div,
+[data-overlay] > *,
+[data-black-overlay] > div,
+[data-black-overlay] > *,
+[data-white-overlay] > div,
+[data-white-overlay] > *,
+[data-theme-overlay] > div,
+[data-theme-overlay] > * {
+  position: relative;
+  z-index: 1;
+}
+
+[data-overlay]:before,
+[data-black-overlay]:before,
+[data-white-overlay]:before,
+[data-theme-overlay]:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+[data-overlay]:before {
+  background-color: var(--color-primary);
+}
+
+[data-black-overlay]:before {
+  background-color: var(--black-color);
+}
+
+[data-white-overlay]:before {
+  background-color: #b4abab;
+}
+
+@for $i from 1 through 10 {
+  [data-overlay="#{$i}"]:before,
+  [data-black-overlay="#{$i}"]:before,
+  [data-white-overlay="#{$i}"]:before {
+    opacity: #{$i * 0.1};
+  }
+}

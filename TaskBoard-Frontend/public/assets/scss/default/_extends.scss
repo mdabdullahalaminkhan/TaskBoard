@@ -1,0 +1,329 @@
+
+
+%width-100 {
+  width: 100%;
+}
+
+%height-100 {
+  height: 100%;
+}
+
+%overflowHidden {
+  overflow: hidden;
+}
+
+%cursorPointer {
+  cursor: pointer;
+}
+
+%fontPrimary {
+  font-family: var(--body-font);
+}
+
+%fontSecondary {
+  font-family: var(--heading-font);
+}
+
+.none {
+  display: none;
+}
+
+%hidden {
+  visibility: hidden;
+}
+
+%visible {
+  visibility: visible;
+}
+
+%absolute {
+  position: absolute;
+}
+
+%relative {
+  position: relative;
+}
+
+%inlineBlock {
+  display: inline-block;
+}
+
+%block {
+  display: block;
+}
+
+%textUppercase {
+  text-transform: uppercase;
+}
+
+%textLowercase {
+  text-transform: lowercase;
+}
+
+%textCapitalize {
+  text-transform: capitalize;
+}
+
+%transition {
+  -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+
+// Font Weight
+%fontWeight900 {
+  font-weight: 900;
+}
+
+%fontWeight800 {
+  font-weight: 800;
+}
+
+%fontWeight700 {
+  font-weight: 700;
+}
+
+%fontWeight600 {
+  font-weight: 600;
+}
+
+%fontWeight500 {
+  font-weight: 500;
+}
+
+%fontWeight400 {
+  font-weight: 400;
+}
+
+%fontWeight300 {
+  font-weight: 300;
+}
+
+.fontWeight900 {
+  font-weight: 900 !important;
+}
+
+.fontWeight800 {
+  font-weight: 800 !important;
+}
+
+.fontWeight700 {
+  font-weight: 700 !important;
+}
+
+.fontWeight600 {
+  font-weight: 600 !important;
+}
+
+.fontWeight500 {
+  font-weight: 500 !important;
+}
+
+.fontWeight400 {
+  font-weight: 400 !important;
+}
+
+.fontWeight300 {
+  font-weight: 300 !important;
+}
+
+// Position
+
+%verticalCenter {
+  @extend %absolute;
+  top: 50%;
+  @include transform(translateY(-50%));
+  z-index: 2;
+}
+
+%positionFull {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+// Text Align
+
+%textLeft {
+  text-align: left !important;
+}
+
+%textRight {
+  text-align: right !important;
+}
+
+%textCenter {
+  text-align: center !important;
+}
+
+// Flexbox
+
+%flexBox {
+  @include flexbox;
+}
+
+%justify-center {
+  @include justify-content(center);
+}
+
+%justify-start {
+  @include justify-content(flex-start);
+}
+
+%justify-end {
+  @include justify-content(flex-end);
+}
+
+%justify-around {
+  @include justify-content(space-around);
+}
+
+%justify-between {
+  @include justify-content(space-between);
+}
+
+%aline-start {
+  @include align-items(flex-start);
+}
+
+%aline-end {
+  @include align-items(flex-end);
+}
+
+%aline-center {
+  @include align-items(center);
+}
+
+%aline-stretch {
+  @include align-items(stretch);
+}
+
+%aline-baseline {
+  @include align-items(baseline);
+}
+
+%flex-wrap {
+  @include flex-wrap(wrap);
+}
+
+%flex-nowrap {
+  @include flex-wrap(nowrap);
+}
+
+%flex-column {
+  @include flex-direction(column);
+}
+
+%flex-column-reverse {
+  @include flex-direction(column-reverse);
+}
+
+%flex-row {
+  @include flex-direction(row);
+}
+
+%flex-row-reverse {
+  @include flex-direction(row-reverse);
+}
+
+%absolute {
+  position: absolute;
+}
+
+%relative {
+  position: relative;
+}
+
+%inlineBlock {
+  display: inline-block;
+}
+
+%block {
+  display: block;
+}
+
+%textUppercase {
+  text-transform: uppercase;
+}
+
+%textLowercase {
+  text-transform: lowercase;
+}
+
+%textCapitalize {
+  text-transform: capitalize;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+%bgImgPosition {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+%textDecoration{
+  text-decoration: none;
+}
+.textDecoration{
+  text-decoration: none;
+}
+
+
+%listStyle {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.listStyle {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+// GradientDefault
+
+%gradient-primary {
+  background: linear-gradient(to right,
+      var(--primary-theme-color) 50%,
+      var(--secondary-theme-color) 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.default-gradient {
+  @extend %gradient-primary;
+}
+
+%theme-default-gradient {
+  background: linear-gradient(-259deg,
+      var(--primary-theme-color) 0,
+      var(--secondary-theme-color) 100%);
+}
+
+.bg-theme-gradient {
+  background: linear-gradient(120deg,
+      #1c99fe 20.69%,
+      #7644ff 50.19%,
+      var(--primary-theme-color) 79.69%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-theme-color)', endColorstr='var(--secondary-theme-color)', GradientType=1);
+}
+
+.theme-default-gradient {
+  background: var(--primary-theme-color);
+  background: linear-gradient(120deg,
+      #1c99fe 20.69%,
+      #7644ff 50.19%,
+      var(--primary-theme-color) 79.69%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-theme-color)', endColorstr='var(--secondary-theme-color)', GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}

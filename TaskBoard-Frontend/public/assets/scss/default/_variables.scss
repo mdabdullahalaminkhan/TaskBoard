@@ -1,0 +1,112 @@
+:root {
+  // Body Colors
+  --primary-body-color: #FFFFFF;
+  --secondary-body-color: #ECEEF2;
+
+  // Theme Colors
+  --primary-theme-color: #cb0c9f;
+  --secondary-theme-color: #F2D9ED;
+
+  // Typography Colors
+  --heading-color: #1f1f25;
+  --paragraph-color: #757575; 
+
+  // Important Colors
+  --gray-color: #808080;
+  --gray-color-mid: #a9a9a9;
+  --color-opacity: hsla(0, 0%, 34%, 0.275);
+  --color-light: #d4d4d4;
+  --color-border: #d4d4d4;
+  --color-white: #ffffff;
+  --black-color: #010001;
+
+  // Alert Colors
+  --success-color: #3eb75e;
+  --danger-color: #ff0003;
+  --warning-color: #ff8f3c;
+  --info-color: #1ba2db;
+
+  // Social Icon Colors
+  --facebook-color: #3b5997;
+  --youtube-color: #1ba1f2;
+  --twitter-color: #3b5997;
+  --linkedin-color: #0077b5;
+  --pinterest-color: #e60022;
+  --instagram-color: #c231a1;
+  --reddit-color: #ff5700;
+  --snapChat-color: #fffc00;
+  --whatsApp-color: #25d366;
+  --messenger-color: #0099ff;
+  --behance-color: #131418;
+
+  // Border Radius
+  --border-radius: 10px;
+  --border-radius-big: 16px;
+  --border-radius-small: 6px;
+  --border-radius-width: 2px;
+
+  // Font weight control
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+  --font-very-extra-bold: 800;
+
+  // Shadows
+  --primary-shadows: 0px 4px 10px rgba(37, 47, 63, 0.1);
+  --primary-light: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  --primary-dark: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+
+  // Transition easing effect
+  --transition: 0.3s;
+
+  // Font Family
+  --body-font: "Poppins", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --font-awesome: "Font Awesome 5 Pro";
+
+  // Font Size
+  --font-size-x-lg: 22px;
+  --font-size-lg: 18px;
+  --font-size-me: 16px;
+  --font-size-sm: 14px;
+  --font-size-x-sm: 12px;
+
+  // Line Height
+  --line-height-lg: 28px;
+  --line-height-me: 24px;
+  --line-height-sm: 22px;
+  --line-height-x-sm: 16px;
+
+  // Heading Font Size
+  --h1: 44px;
+  --h2: 36px;
+  --h3: 30px;
+  --h4: 24px;
+  --h5: 18px;
+  --h6: 16px;
+}
+
+/*================================
+        Color Gradient Variation
+==================================*/
+
+$color-gradient-1: var(--primary-theme-color);
+$color-gradient-2: #f4769a;
+$color-gradient-3: #8956e2;
+$color-gradient-4: #2f21b3;
+$color-gradient-mix: $color-gradient-1, $color-gradient-2, $color-gradient-3,
+  $color-gradient-4;
+
+/*================================
+        Responsive Layouts
+==================================*/
+$extra-device: "only screen and (min-width: 1600px) and (max-width: 1919px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$lg-layout-device: "only screen and (min-width: 992px)";
+$md-layout-device: "only screen and (max-width: 991px)";
+$sm-layout-device: "only screen and (max-width: 767px)";
+$mobile-lg-layout: "only screen and (max-width: 575px)";
+$mobile-sm-layout: "only screen and (max-width: 479px)";
